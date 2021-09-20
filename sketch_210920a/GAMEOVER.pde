@@ -2,10 +2,10 @@ PImage backGround;
 
 
 void GAMEOVER() {
-  backGround = loadImage("colorGame-Gameover.jpg");
+  backGround = loadImage("Backgrounds/colorGame-Gameover.jpg");
   background(backGround);
   fill(#FF0000);
-  textSize(48);
+  textSize(100);
   text("GAMEOVER!!!", 400, 370);
   textSize(32);
   text("WOW! YOUR SCORE IS: "+score,400,420);
