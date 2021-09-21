@@ -1,6 +1,7 @@
 PImage[] introgif;
 int frameNumber;
 int f;
+int t =255;
 // variables
 
 void intro() {
@@ -31,22 +32,18 @@ void intro() {
    text("Color Game!", 600, 350);
    // print title texts
    
-   int startTextSize = 32;
- 
-   fill (#AAAAAA);
+     
+   fill (#AAAAAA, t);
    textFont(Pixelboy);
-   textSize(startTextSize);
+   textSize(32);
    text("PRESS SPACE KEY TO START!", 602, 600);
    
-   fill (#FFFFFF);
+   fill (#FFFFFF, t);
    textFont(Pixelboy);
-   textSize(startTextSize);
+   textSize(32);
    text("PRESS SPACE KEY TO START!", 600, 600);
    
-   for (int i = 32; i <= 34; i++) {
-   startTextSize = i;
- }
-     
+   for (int i = 0; i >= 255; i=0) {t = i;}
    
 }
 

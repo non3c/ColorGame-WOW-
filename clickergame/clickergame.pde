@@ -24,6 +24,7 @@ void setup() {
   frameRate(60); // sets framerate to 60
   mode = INTRO; // sets mode to INTRO
   textAlign(CENTER, CENTER);
+  
   Pixelboy = createFont("Pixeboy.ttf", 128);
   QuartsPachino = createFont("Quarts Pachino Demo Version.otf", 128); // imports font
   rectMode(CENTER);
@@ -58,6 +59,18 @@ void draw() {
 }
 //
 
-void button(){
+void button(int x, int y, int size){
+  stroke(#000000);
+  strokeWeight(8);  
+  fill(#FFAE7E);
+  rect(x,y, size+200,size, 120);
+  
+}
+
+void showScreen(int x, int y){
+  stroke(#000000);
+  strokeWeight(8);  
+  fill(#FFAE7E);
+  rect(x,y, 900,450, 5);
   
 }
