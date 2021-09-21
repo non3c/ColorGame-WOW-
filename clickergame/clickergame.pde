@@ -25,8 +25,10 @@ void setup() {
   mode = INTRO; // sets mode to INTRO
   textAlign(CENTER, CENTER);
   
-  Pixelboy = createFont("Pixeboy.ttf", 128);
-  QuartsPachino = createFont("Quarts Pachino Demo Version.otf", 128); // imports font
+  
+  
+  Pixelboy = createFont("Pixeboy.ttf", 64);
+  QuartsPachino = createFont("Quarts Pachino Demo Version.otf", 64); // imports font
   rectMode(CENTER);
   
    if (mode == INTRO) {
@@ -59,18 +61,24 @@ void draw() {
 }
 //
 
-void button(int x, int y, int size){
+void button(int x, int y, int size, String buttonText){
   stroke(#000000);
-  strokeWeight(8);  
-  fill(#FFAE7E);
+  strokeWeight(16);  
+  fill(#9BB1FF);
   rect(x,y, size+200,size, 120);
+  textFont(Pixelboy);
+  textSize(56);
+  fill(#0F2A89);
+  text(buttonText,x, y);
   
 }
 
 void showScreen(int x, int y){
   stroke(#000000);
   strokeWeight(8);  
-  fill(#FFAE7E);
-  rect(x,y, 900,450, 5);
+  fill(#4A78D8);
+  rect(x,y, 900,600, 5);
+  fill(#142C13);
+  rect(x,y-80, 800,380, 5);
   
 }

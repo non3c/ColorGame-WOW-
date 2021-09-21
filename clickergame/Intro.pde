@@ -36,17 +36,14 @@ void intro() {
    fill (#AAAAAA, t);
    textFont(Pixelboy);
    textSize(32);
-   text("PRESS SPACE KEY TO START!", 602, 600);
+   text("LEFT CLICK TO START!", 602, 600);
    
    fill (#FFFFFF, t);
    textFont(Pixelboy);
    textSize(32);
-   text("PRESS SPACE KEY TO START!", 600, 600);
-   
-   for (int i = 0; i >= 255; i=0) {t = i;}
+   text("LEFT CLICK TO START!", 600, 600);
    
 }
-
 void introClicks() {
   mode = GAME;
 }

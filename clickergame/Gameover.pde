@@ -4,6 +4,7 @@ PImage backGround;
 void gameover() {
   backGround = loadImage("Backgrounds/colorGame-Gameover.jpg");
   background(backGround);
+  textFont(Pixelboy);
   fill(#FF0000);
   textSize(100);
   text("GAMEOVER!!!", 600, 370);
@@ -12,10 +13,6 @@ void gameover() {
   textSize(20);
   text("Your highest score: "+highestScore,600,440);
 
-if (mousePressed) {
-    mode = INTRO;
-    score = 0;
-  }
 }
 
 void gameoverClicks() {
